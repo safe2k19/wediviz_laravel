@@ -16,7 +16,7 @@ class CreatePopupTables extends Migration
         Schema::create('popup', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('email')->unique();
+            $table->string('email');
             $table->string('phone')->unique();
             $table->timestamps();
         });
